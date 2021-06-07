@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-image: linear-gradient(120deg, #5f57d1, #c065c0);
+  min-height: 100vh;
+  color: white;
+}
+
+header,
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 15vh;
+}
+
+form input,
+form button {
+  padding: 0.4rem;
+  border: none;
+  font-size: 1.6rem;
+  background: white;
+}
+
+form button {
+  color: #c065c0;
+  cursor: pointer;
+  background: white;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  color: white;
+  background: #c065c0;
+}
+
+.select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+select {
+  color: #c065c0;
+  width: 8rem;
+  cursor: pointer;
+  padding: 0.7rem;
+}
+
+.select::after {
+  content: "\25bc";
+  position: absolute;
+  color: #c065c0;
+  top: 12px;
+  right: 4px;
+  pointer-events: none;
+}
+
+.select:hover::after {
+  color: #583429;
+}
+
+.todo_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo_list {
+  min-width: 40%;
+  list-style: none;
+}
+
+.todo {
+  margin: 5px auto;
+  background: white;
+  color: #000;
+  display: flex;
+  font-size: 1.2rem;
+  padding: 0.3rem;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+.todo li {
+  flex: 1;
+}
+
+.complete_btn,
+.delete_btn {
+  padding: 0.5rem;
+  background: #ff3700;
+  color: white;
+  border: none;
+  margin-left: 0.2rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.complete_btn {
+  background: rgb(67, 179, 67);
+}
+.complete_btn:active {
+  background: green;
+}
+
+.delete_btn:active {
+  background: #b65337;
+}
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+.completedItem {
+  text-decoration: line-through;
+  opacity: 0.5;
+  transform: scale(0.96);
+}
+
+.fall {
+  transform: translateY(4rem) scale(0.4) rotateZ(20deg);
+  opacity: 0;
+}
