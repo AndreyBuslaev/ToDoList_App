@@ -11,7 +11,7 @@ body {
   color: white;
 }
 
-header,
+section,
 form {
   display: flex;
   justify-content: center;
